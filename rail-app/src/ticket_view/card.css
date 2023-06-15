@@ -1,0 +1,54 @@
+.ticket-card {
+    border: 1px solid #234545;
+    background-color: rgb(248, 243, 237);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    border-radius: 5px;
+}
+
+.train_card {
+    grid-column: 1 / 8;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.key {
+    font-weight: bold;
+    display: block;
+    width: 40%;
+    margin: 5px;
+}
+
+.val {
+    color: green;
+    margin: 5px;
+}
+
+.footer {
+    height: 200px;
+    margin-top: 20px;
+    background-color: black;
+}
+
+.card {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.cells {
+    padding: 0.5em;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.bold {
+    font-weight: bold;
+}

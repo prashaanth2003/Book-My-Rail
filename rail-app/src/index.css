@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,300;1,100&family=PT+Sans:ital@0;1&family=Poppins:wght@100;200;300&family=Roboto+Mono:wght@100;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(to right, #ffffff, #9ba3eb);
+    scroll-snap-type: y mandatory;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.booking-section {
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.container {
+    margin: 2em;
+    width: 80%;
+    background-image: linear-gradient(135deg, #e8ebff 50%, #fafaff, #e8ebff);
+    box-shadow: 3px 3px 12px 1px #646fd4;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.train-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+}
+
+.ticket {
+    position: fixed;
+    top: 9rem;
+    right: 2.5rem;
+    width: 30%;
+    padding: 10px;
+    margin: 2em;
+}
+
+#passForm > div {
+    margin: 2px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.passenger-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.passenger-container > p {
+    font-size: 1.8rem;
+    padding: 0.5em;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+}
+
+.passenger-container div {
+    padding: 1em 0 1em 0;
+}
+
+.to-from {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.to-from > div {
+    padding: 0.5em;
+}
+
+.value-container {
+    border-bottom: 2px solid black;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.class-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.class-container > input[type="button"] {
+    font-size: 0.8em;
+    border: 1px solid black;
+    margin: 1.5rem;
+    width: 8rem;
+    height: 4rem;
+    box-shadow: 0 0 2px 1px;
+    background-color: #f9f9ff;
+    color: #242f9b;
+}
+
+.class-container > input[type="button"]:hover {
+    cursor: pointer;
+    background-color: #f9f9ff;
+}
+
+.class-container > input[type="button"]:focus {
+    border: 3px solid blue;
+    background-color: #ccd8f6;
+}
+
+/* Plan ur journey */
+
+.home-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1em;
+}
+
+.header-style {
+    width: 35%;
+    font-family: "Inter", sans-serif;
+    font-size: 7rem;
+    font-weight: 300;
+    text-overflow: clip;
+    text-shadow: 1px 5px 7px #242f9b;
+}
+
+.input-field {
+    padding-right: 1.5em;
+}
+
+.input-field > input {
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    height: 3.5em;
+    background-color: inherit;
+    z-index: -1;
+    width: 15rem;
+}
+
+.input-field > label {
+    display: inline-block;
+    background-color: #e8ebff;
+    color: #696a70;
+    position: relative;
+    bottom: 1.5em;
+    left: 5em;
+    z-index: 2;
+    width: 2em;
+}
+
+.input-field > input:hover {
+    border: 1px solid black;
+}
+
+.plan-container {
+    text-align: center;
+    margin: 2em 0 0 6rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-container div {
+    margin: 0.4em 0 0.5em 0;
+}
+
+.plan-container h1 {
+    margin-top: 0.3em;
+    font-family: "Roboto mono", monospace;
+    font-weight: 400;
+}
+
+/* Dashboard */
+
+.dashboard {
+    margin: auto;
+    display: flex;
+    align-content: space-around;
+    height: 35em;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 30%;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: center;
+}
+
+.his-con {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.profile-container div,
+.history-container div {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.2em;
+    margin: 0.5em;
+}
+
+.his-con .bold {
+    text-transform: capitalize;
+}
+
+.t_no {
+    border-bottom: 1px solid #696a70;
+    grid-column: 1/6;
+}
+
+/* nav bar */
+
+.nav-bar {
+    top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.nav-menu {
+    display: block;
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+.link {
+    padding: 0;
+}
+
+.img-size {
+    top: 0;
+    left: 0;
+    width: 7em;
+    height: 7em;
+}
+
+.link {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #242f9b;
+}
+
+.link:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #242f9b;
+}
+
+@media screen and (min-width: 400px) {
+    .nav-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .nav-links > div {
+        margin-right: 1em;
+        padding: 1em 0 0 1em;
+    }
+}
+
+/* Login - page */
+.acc-details {
+    width: 50%;
+    margin: 0.5em auto;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.acc-details > p {
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.4em;
+}
+
+.form-entry {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.head_card {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-entry input {
+    font-size: 1rem;
+    width: fit-content;
+}
+
+@media screen and (min-width: 400px) {
+    .form-entry input {
+        width: 20rem;
+    }
+}
+
+input[type="submit"],
+input[type="button"] {
+    padding: 0.3em;
+    color: white;
+    background-color: #334155;
+    height: 3em;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #495e7b;
+    box-shadow: 0 0 5px 2px;
+}
+
+div input,
+select {
+    font-family: "PT Sans", sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    height: 2em;
+    width: 18rem;
+    margin: 0.5em;
+    border: 1px inset black;
+}
+
+div input:focus {
+    border-bottom: 3px solid #242f9b;
+}
+
+div select {
+    background-color: white;
+    height: 2.42em;
+}
+
+.linker {
+    color: rgb(37, 109, 234);
+    margin: 1em;
+}
+
+.linker:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    margin-top: 1.3em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media > div {
+    padding: 1em;
+    margin-top: 1em;
+}
