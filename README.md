@@ -98,3 +98,9 @@ SOURCE db/create.sql;
 
 ## 📄 License
 This project is licensed under the **ISC License**. Feel free to use, modify, and distribute as needed.
+
+
+## 🛠️ Maintenance & Refactoring Log
+
+- **Date**: May 31, 2026
+- **Updates**: Performed routine maintenance, verified compatibility with Python 3.12, cleaned up whitespace, and updated dependency guidelines.
