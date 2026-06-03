@@ -1,23 +1,31 @@
-# 🤝 Contributing to Book-My-Rail
+# Contributing to Book-My-Rail
 
-Thanks for your interest! Here's how to get started:
+Thanks for your interest in contributing!
 
-## Setup
-1. Fork the repository
-2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/Book-My-Rail.git`
-3. Install dependencies (if applicable)
-4. Create a feature branch: `git checkout -b feature/your-feature`
+## Quick Start
+1. Fork and clone the repository
+2. Install dependencies: `npm install` (root) then `cd rail-app && npm install`
+3. Set up MySQL with `db/create.sql`
+4. Configure `node/db_connect.js` with your credentials
 
-## Guidelines
-- Keep code clean and well-documented
-- Test your changes thoroughly
-- Write meaningful commit messages
-- Update documentation as needed
+## Security: Parameterized Queries
+**ALL SQL queries MUST use parameterized statements** — never string concatenation:
 
-## Pull Request Process
-1. Ensure your branch is up to date with main
-2. Submit a PR with a clear title and description
-3. Wait for review and address any feedback
+```js
+// CORRECT
+con.query("SELECT * FROM users WHERE id = ?", [userId], callback);
+
+// WRONG — SQL injection vulnerability
+con.query("SELECT * FROM users WHERE id = '" + userId + "'", callback);
+```
+
+## Commit Message Format
+Follow Conventional Commits: `feat:`, `fix:`, `refactor:`, `docs:`, `style:`, `test:`, `chore:`
+
+## PR Process
+- Keep branch up to date with main
+- Write clear PR descriptions
+- Address review feedback
 
 ## Code of Conduct
-Be respectful, inclusive, and constructive in all interactions.
+Be respectful and constructive.
