@@ -1,5 +1,7 @@
 # 🚆 Book-My-Rail: Full-Stack Rail Ticket Booking System
 
+![Node.js CI](https://github.com/prashaanth2003/Book-My-Rail/actions/workflows/node.js.yml/badge.svg)
+
 Book-My-Rail is a robust, full-stack railway ticketing application built using **React** for a responsive user interface, **Node.js & Express** for the backend APIs, and **MySQL** for relational database storage and transactional integrity.
 
 ---
@@ -101,6 +103,10 @@ This project is licensed under the **ISC License**. Feel free to use, modify, an
 
 
 ## 🛠️ Maintenance & Refactoring Log
+
+- **Date**: June 6, 2026
+- **Updates**: Configured an automated GitHub Actions CI/CD pipeline (`node.js.yml`) to run dependency installations, builds, and automated tests across multiple Node.js LTS versions (v18, v20, and v22) on push or pull requests to improve overall codebase stability.
+
 
 - **Date**: May 31, 2026
 - **Updates**: Performed routine maintenance, verified compatibility with Python 3.12, cleaned up whitespace, and updated dependency guidelines.
